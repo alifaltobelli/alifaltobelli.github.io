@@ -1,33 +1,36 @@
-# Alif Altobelli Portfolio
+# Alif Altobelli Portfolio — Final Bilingual SEO Version
 
-Static portfolio website for GitHub Pages.
+## Required repository structure
+Upload the CONTENTS of this folder directly to the root of the `alifaltobelli.github.io` repository:
 
-## Deploy
-1. Replace the existing files in the `alifaltobelli.github.io` repository with the contents of this folder.
-2. Keep `index.html` in the repository root.
-3. Keep the `assets` folder in the repository root.
-4. Commit and push to the `main` branch.
-5. GitHub Pages will publish the updated site automatically.
+- `index.html`
+- `en/index.html`
+- `assets/profile.jpg`
+- `assets/profile.jpeg` (compatibility alias)
+- `assets/CV-Alif-Altobelli.pdf`
+- `assets/favicon.svg`
+- `robots.txt`
+- `sitemap.xml`
+- `.nojekyll`
 
-The site is responsive and does not require a build process or external framework.
+Do not upload the enclosing folder itself.
 
-Updated version includes 1 year of Digital Place Vision experience and digitalplace.ai in the portfolio.
+## Language URLs
+- Indonesian: https://alifaltobelli.github.io/
+- English: https://alifaltobelli.github.io/en/
 
-## Bilingual & SEO
-- Indonesian homepage: `/`
-- English homepage: `/en/`
-- Language switch is included in the navigation.
-- `Person`, `WebSite`, and `ProfilePage` JSON-LD schema are embedded.
-- Canonical + hreflang tags are included.
-- `robots.txt` and `sitemap.xml` are included.
+## Important
+The live site will only show the new design after these files are committed to the repository.
+The profile image URL should then work at:
+https://alifaltobelli.github.io/assets/profile.jpg
 
-After publishing:
-1. Add `https://alifaltobelli.github.io/` to Google Search Console.
-2. Submit `https://alifaltobelli.github.io/sitemap.xml`.
-3. Request indexing for `/` and `/en/`.
+## SEO
+Included:
+- Person, WebSite, ProfilePage JSON-LD
+- canonical tags
+- hreflang ID/EN/x-default
+- Open Graph and Twitter metadata
+- robots.txt
+- sitemap.xml
 
-## Employment timeline update
-- PT SBG Solusi Bisnis: Mar 2026 – May 2026
-- Digital Place Vision Pte Ltd: May 2026 – Present
-- Portfolio section title: Best Active Portfolio
-- digitalplace.ai is included as an active portfolio item.
+After deployment, submit `https://alifaltobelli.github.io/sitemap.xml` in Google Search Console and request indexing for both language URLs.

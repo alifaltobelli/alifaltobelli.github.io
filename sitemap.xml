@@ -5,10 +5,12 @@
     <loc>https://alifaltobelli.github.io/</loc>
     <xhtml:link rel="alternate" hreflang="id" href="https://alifaltobelli.github.io/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://alifaltobelli.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alifaltobelli.github.io/" />
   </url>
   <url>
     <loc>https://alifaltobelli.github.io/en/</loc>
     <xhtml:link rel="alternate" hreflang="id" href="https://alifaltobelli.github.io/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://alifaltobelli.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alifaltobelli.github.io/" />
   </url>
 </urlset>
