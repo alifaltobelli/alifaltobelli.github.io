@@ -156,6 +156,37 @@ html[data-theme="light"] footer{color:#737b84}
   .mini-card{left:12px;bottom:14px}
 }
 
+
+/* --- Hero portrait: smaller and circular --- */
+.hero-grid{grid-template-columns:minmax(0,1.45fr) minmax(240px,.55fr);gap:48px;align-items:center}
+.portrait-wrap{max-width:260px;width:100%;justify-self:center}
+.portrait-card{
+  padding:12px;
+  border-radius:999px;
+  background:linear-gradient(145deg,#1a1e23,#0f1114);
+}
+.portrait-card img{
+  aspect-ratio:1/1;
+  border-radius:999px;
+  object-fit:cover;
+  object-position:center 12%;
+}
+.mini-card{
+  left:-14px;
+  bottom:6px;
+  min-width:150px;
+  padding:11px 14px;
+  border-radius:16px;
+}
+.mini-card strong{font-size:18px}
+@media(max-width:900px){
+  .portrait-wrap{max-width:230px;justify-self:start}
+}
+@media(max-width:620px){
+  .portrait-wrap{max-width:190px}
+  .mini-card{left:6px;bottom:-10px}
+}
+
 </style>
 </head>
 <body>
@@ -169,7 +200,7 @@ html[data-theme="light"] footer{color:#737b84}
 <main id="top">
 <section class="hero"><div class="container hero-grid"><div>
 <div class="eyebrow">WordPress Developer · Surabaya, Indonesia</div><h1>Membangun website yang <span>cepat, aman,</span> dan mudah dirawat.</h1><p class="hero-copy">Web Developer dengan pengalaman lebih dari 5 tahun di pengembangan WordPress, manajemen server cPanel/WHM, web hosting, custom theme & plugin, performance optimization, technical SEO, dan website security.</p>
-<div class="hero-actions"><a class="btn btn-primary" href="#portfolio">Lihat Portfolio</a><a class="btn btn-secondary" href="assets/CV-Alif-Altobelli.pdf" target="_blank">Download CV</a><a class="btn btn-secondary" href="https://github.com/alifaltobelli" target="_blank" rel="noreferrer">GitHub</a></div>
+<div class="hero-actions"><a class="btn btn-primary" href="#portfolio">Lihat Portfolio</a><a class="btn btn-secondary" href="../assets/CV-Alif-Altobelli-ID.pdf" target="_blank">Download CV</a><a class="btn btn-secondary" href="https://github.com/alifaltobelli" target="_blank" rel="noreferrer">GitHub</a></div>
 </div><div class="portrait-wrap"><div class="portrait-card"><img src="assets/profile.jpg" width="900" height="1347" alt="Alif Altobelli, WordPress Developer and Web Developer" fetchpriority="high"></div><div class="mini-card"><strong>5+ years</strong><span>WordPress & web infrastructure</span></div></div>
 </div></section>
 

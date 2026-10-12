@@ -26,3 +26,9 @@ Upload the contents of this folder directly to the root of the `alifaltobelli.gi
 - Indonesian: https://alifaltobelli.github.io/id/
 
 Education correction: Institut Teknologi Adhi Tama Surabaya updated to 2021–2025.
+
+Hero portrait updated: smaller size with a circular presentation.
+
+## CV files
+- English/default site downloads: `assets/CV-Alif-Altobelli-EN.pdf`
+- Indonesian site downloads: `assets/CV-Alif-Altobelli-ID.pdf`
