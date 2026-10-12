@@ -11,7 +11,7 @@
 <link rel="alternate" hreflang="id" href="https://alifaltobelli.github.io/id/">
 <link rel="alternate" hreflang="en" href="https://alifaltobelli.github.io/">
 <link rel="alternate" hreflang="x-default" href="https://alifaltobelli.github.io/">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Alif Altobelli — WordPress Developer & Web Developer">
 <meta property="og:description" content="Portfolio Alif Altobelli, WordPress Developer dan Web Developer dengan pengalaman custom WordPress, Elementor, cPanel/WHM, hosting, technical SEO, performance, security, dan maintenance.">
@@ -169,6 +169,7 @@ html[data-theme="light"] footer{color:#737b84}
   aspect-ratio:1/1;
   border-radius:999px;
   object-fit:cover;
+  height:100%;
   object-position:center 12%;
 }
 .mini-card{
@@ -187,6 +188,36 @@ html[data-theme="light"] footer{color:#737b84}
   .mini-card{left:6px;bottom:-10px}
 }
 
+
+/* Final portrait sizing */
+.portrait-wrap{
+  width:220px;
+  max-width:220px;
+  justify-self:center;
+}
+.portrait-card{
+  width:220px;
+  height:220px;
+  padding:10px;
+  border-radius:999px;
+  overflow:hidden;
+}
+.portrait-card img{
+  width:100%;
+  height:100%;
+  aspect-ratio:1 / 1;
+  border-radius:999px;
+  object-fit:cover;
+  object-position:center 12%;
+  display:block;
+}
+@media(max-width:900px){
+  .portrait-wrap,.portrait-card{width:200px;max-width:200px;height:200px}
+}
+@media(max-width:620px){
+  .portrait-wrap,.portrait-card{width:170px;max-width:170px;height:170px}
+}
+
 </style>
 </head>
 <body>
@@ -201,7 +232,7 @@ html[data-theme="light"] footer{color:#737b84}
 <section class="hero"><div class="container hero-grid"><div>
 <div class="eyebrow">WordPress Developer · Surabaya, Indonesia</div><h1>Membangun website yang <span>cepat, aman,</span> dan mudah dirawat.</h1><p class="hero-copy">Web Developer dengan pengalaman lebih dari 5 tahun di pengembangan WordPress, manajemen server cPanel/WHM, web hosting, custom theme & plugin, performance optimization, technical SEO, dan website security.</p>
 <div class="hero-actions"><a class="btn btn-primary" href="#portfolio">Lihat Portfolio</a><a class="btn btn-secondary" href="../assets/CV-Alif-Altobelli-ID.pdf" target="_blank">Download CV</a><a class="btn btn-secondary" href="https://github.com/alifaltobelli" target="_blank" rel="noreferrer">GitHub</a></div>
-</div><div class="portrait-wrap"><div class="portrait-card"><img src="assets/profile.jpg" width="900" height="1347" alt="Alif Altobelli, WordPress Developer and Web Developer" fetchpriority="high"></div><div class="mini-card"><strong>5+ years</strong><span>WordPress & web infrastructure</span></div></div>
+</div><div class="portrait-wrap"><div class="portrait-card"><img src="../assets/profile.jpg" width="900" height="1347" alt="Alif Altobelli, WordPress Developer and Web Developer" fetchpriority="high"></div><div class="mini-card"><strong>5+ years</strong><span>WordPress & web infrastructure</span></div></div>
 </div></section>
 
 <section id="about"><div class="container"><div class="section-kicker">Tentang</div><h2>Developer yang nyaman bekerja dari interface sampai server.</h2><div class="about-grid"><div class="about-card"><p>Saya berfokus pada pengembangan dan pemeliharaan website WordPress untuk berbagai kebutuhan, termasuk e-commerce, properti, dan company profile. Pengalaman saya mencakup custom theme & plugin, WooCommerce, Elementor, cPanel/WHM, DNS & SSL, migrasi website, technical SEO, performance optimization, dan keamanan website.</p></div><div class="metrics"><div class="metric"><strong>5+</strong><span>Tahun pengalaman</span></div><div class="metric"><strong>3</strong><span>Area utama: Web, Server, SEO</span></div><div class="metric"><strong>8</strong><span>Portfolio aktif</span></div></div></div></div></section>

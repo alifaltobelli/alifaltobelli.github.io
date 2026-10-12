@@ -32,3 +32,7 @@ Hero portrait updated: smaller size with a circular presentation.
 ## CV files
 - English/default site downloads: `assets/CV-Alif-Altobelli-EN.pdf`
 - Indonesian site downloads: `assets/CV-Alif-Altobelli-ID.pdf`
+
+Portrait image CSS updated with `height: 100%` for consistent circular sizing.
+
+Photo path fix: nested `/id/` and `/en/` pages now correctly use `../assets/profile.jpg`. Hero portrait is fixed at 220x220px desktop and remains circular/responsive.
