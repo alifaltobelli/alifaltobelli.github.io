@@ -1,36 +1,28 @@
-# Alif Altobelli Portfolio — Final Bilingual SEO Version
+# Alif Altobelli Portfolio — Default English Version
 
-## Required repository structure
-Upload the CONTENTS of this folder directly to the root of the `alifaltobelli.github.io` repository:
+## Main changes
+- Default homepage is now English: `/`
+- Indonesian version is now at `/id/`
+- Small circular profile photo is used in the navbar brand area
+- Light / Dark mode remains available
 
-- `index.html`
-- `en/index.html`
+## Upload structure
+Upload the contents of this folder directly to the root of the `alifaltobelli.github.io` repository:
+
+- `index.html`  → English homepage
+- `id/index.html` → Indonesian version
+- `en/index.html` → optional English compatibility path
 - `assets/profile.jpg`
-- `assets/profile.jpeg` (compatibility alias)
+- `assets/profile.jpeg`
 - `assets/CV-Alif-Altobelli.pdf`
 - `assets/favicon.svg`
 - `robots.txt`
 - `sitemap.xml`
 - `.nojekyll`
+- `README.md`
 
-Do not upload the enclosing folder itself.
+## Final URLs
+- English: https://alifaltobelli.github.io/
+- Indonesian: https://alifaltobelli.github.io/id/
 
-## Language URLs
-- Indonesian: https://alifaltobelli.github.io/
-- English: https://alifaltobelli.github.io/en/
-
-## Important
-The live site will only show the new design after these files are committed to the repository.
-The profile image URL should then work at:
-https://alifaltobelli.github.io/assets/profile.jpg
-
-## SEO
-Included:
-- Person, WebSite, ProfilePage JSON-LD
-- canonical tags
-- hreflang ID/EN/x-default
-- Open Graph and Twitter metadata
-- robots.txt
-- sitemap.xml
-
-After deployment, submit `https://alifaltobelli.github.io/sitemap.xml` in Google Search Console and request indexing for both language URLs.
+Education correction: Institut Teknologi Adhi Tama Surabaya updated to 2021–2025.
