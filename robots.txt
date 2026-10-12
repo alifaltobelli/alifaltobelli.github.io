@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alifaltobelli.github.io/sitemap.xml
