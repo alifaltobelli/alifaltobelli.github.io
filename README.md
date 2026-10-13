@@ -43,3 +43,8 @@ Photo path fix: nested `/id/` and `/en/` pages now correctly use `../assets/prof
 - Added accessible hamburger navigation below 940px.
 - Added Academic Portfolio / Portfolio Akademik section with research, web-system project, and SINTA IPR references.
 - Added `alumniOf` ITATS structured data.
+
+## Mobile hero portrait refinement
+- On screens up to 620px, the profile portrait now appears at the top of the hero.
+- Portrait, experience badge, eyebrow, headline, copy, and CTA area are centered for a cleaner mobile composition.
+- Desktop and tablet layouts remain unchanged.
