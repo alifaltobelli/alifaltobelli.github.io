@@ -23,7 +23,7 @@
 <meta name="twitter:title" content="Alif Altobelli — WordPress Developer & Web Developer">
 <meta name="twitter:description" content="Portfolio of Alif Altobelli, a WordPress Developer and Web Developer experienced in custom WordPress, Elementor, cPanel/WHM, hosting, technical SEO, performance, security, and maintenance.">
 <meta name="twitter:image" content="https://alifaltobelli.github.io/assets/profile.jpg">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://alifaltobelli.github.io/#person", "name": "Alif Altobelli", "url": "https://alifaltobelli.github.io/", "image": {"@type": "ImageObject", "url": "https://alifaltobelli.github.io/assets/profile.jpg", "width": 900, "height": 1347}, "jobTitle": ["WordPress Developer", "Web Developer"], "description": "WordPress Developer and Web Developer experienced in custom WordPress, Elementor, cPanel/WHM, hosting, technical SEO, performance optimization, and website security.", "email": "mailto:alifaltobelli27@gmail.com", "telephone": "+6285728873912", "address": {"@type": "PostalAddress", "addressLocality": "Surabaya", "addressCountry": "ID"}, "sameAs": ["https://github.com/alifaltobelli"], "worksFor": {"@type": "Organization", "name": "Digital Place Vision Pte Ltd", "url": "https://digitalplace.ai/"}, "knowsAbout": ["WordPress", "WooCommerce", "Elementor", "Gutenberg", "PHP", "HTML5", "CSS3", "JavaScript", "MySQL", "Custom WordPress Themes", "Custom WordPress Plugins", "cPanel", "WHM", "VPS", "SSH", "Linux", "DNS", "SSL", "Technical SEO", "Website Performance", "Website Security"]}, {"@type": "WebSite", "@id": "https://alifaltobelli.github.io/#website", "url": "https://alifaltobelli.github.io/", "name": "Alif Altobelli Portfolio", "inLanguage": ["id", "en"], "publisher": {"@id": "https://alifaltobelli.github.io/#person"}}, {"@type": "ProfilePage", "@id": "https://alifaltobelli.github.io/#profilepage", "url": "https://alifaltobelli.github.io/", "name": "Alif Altobelli — WordPress Developer & Web Developer", "inLanguage": "en", "mainEntity": {"@id": "https://alifaltobelli.github.io/#person"}, "isPartOf": {"@id": "https://alifaltobelli.github.io/#website"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://alifaltobelli.github.io/#person", "name": "Alif Altobelli", "url": "https://alifaltobelli.github.io/", "image": {"@type": "ImageObject", "url": "https://alifaltobelli.github.io/assets/profile.jpg", "width": 900, "height": 1347}, "jobTitle": ["WordPress Developer", "Web Developer"], "description": "WordPress Developer and Web Developer experienced in custom WordPress, Elementor, cPanel/WHM, hosting, technical SEO, performance optimization, and website security.", "email": "mailto:alifaltobelli27@gmail.com", "telephone": "+6285728873912", "address": {"@type": "PostalAddress", "addressLocality": "Surabaya", "addressCountry": "ID"}, "sameAs": ["https://github.com/alifaltobelli"], "alumniOf": {"@type": "CollegeOrUniversity", "name": "Institut Teknologi Adhi Tama Surabaya", "alternateName": "ITATS"}, "worksFor": {"@type": "Organization", "name": "Digital Place Vision Pte Ltd", "url": "https://digitalplace.ai/"}, "knowsAbout": ["WordPress", "WooCommerce", "Elementor", "Gutenberg", "PHP", "HTML5", "CSS3", "JavaScript", "MySQL", "Custom WordPress Themes", "Custom WordPress Plugins", "cPanel", "WHM", "VPS", "SSH", "Linux", "DNS", "SSL", "Technical SEO", "Website Performance", "Website Security"]}, {"@type": "WebSite", "@id": "https://alifaltobelli.github.io/#website", "url": "https://alifaltobelli.github.io/", "name": "Alif Altobelli Portfolio", "inLanguage": ["id", "en"], "publisher": {"@id": "https://alifaltobelli.github.io/#person"}}, {"@type": "ProfilePage", "@id": "https://alifaltobelli.github.io/#profilepage", "url": "https://alifaltobelli.github.io/", "name": "Alif Altobelli — WordPress Developer & Web Developer", "inLanguage": "en", "mainEntity": {"@id": "https://alifaltobelli.github.io/#person"}, "isPartOf": {"@id": "https://alifaltobelli.github.io/#website"}}]}</script>
 <style>
 :root{
   --bg:#0d0f12;--panel:#14171b;--panel2:#191d22;--text:#f4f4f2;--muted:#a9afb7;
@@ -218,14 +218,197 @@ html[data-theme="light"] footer{color:#737b84}
   .portrait-wrap,.portrait-card{width:170px;max-width:170px;height:170px}
 }
 
+
+/* =========================================================
+   RESPONSIVE SYSTEM — final override
+   Targets desktop, laptop, tablet, mobile, and small phones.
+   ========================================================= */
+html{scroll-padding-top:90px}
+body{overflow-x:hidden}
+main,section,.container,.nav-wrap,.hero-grid,.about-grid,.metrics,.skills-grid,.projects,.education,.academic-grid,.contact{min-width:0}
+section[id]{scroll-margin-top:88px}
+.brand{min-width:0;white-space:nowrap}
+.brand-mark{flex:0 0 auto}
+.nav-wrap{position:relative;min-height:72px;height:auto;padding:10px 0}
+.nav-links{min-width:0}
+.nav-toggle{
+  display:none;width:42px;height:42px;padding:0;border:1px solid #353b43;border-radius:12px;
+  background:#15191d;color:#f4f4f2;cursor:pointer;align-items:center;justify-content:center;
+  flex-direction:column;gap:5px;flex:0 0 auto
+}
+.nav-toggle span{display:block;width:18px;height:2px;background:currentColor;border-radius:999px;transition:.2s ease}
+.nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.hero{min-height:calc(100svh - 72px)}
+.hero-grid{grid-template-columns:minmax(0,1.45fr) minmax(220px,.55fr);gap:48px}
+.hero-grid>div:first-child{min-width:0}
+.hero-copy{max-width:680px}
+.hero-actions{align-items:stretch}
+.btn{min-height:46px}
+.portrait-wrap{flex:0 0 auto}
+.project-card>div:first-child,.academic-card>div:first-child{min-width:0}
+.project-card strong,.academic-card h3,.contact-item{overflow-wrap:anywhere}
+.experience-card,.skill-card,.project-card,.edu-card,.about-card,.metric,.academic-card{min-width:0}
+.contact-list{width:min(100%,420px)}
+.contact-item{display:block}
+.footer-row span{min-width:0}
+
+/* Academic portfolio */
+.academic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.academic-card{
+  background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.02));
+  border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:26px;
+  display:flex;flex-direction:column;min-height:100%;transition:.2s transform,.2s border-color
+}
+.academic-card:hover{transform:translateY(-3px);border-color:#555e69}
+.academic-badge{
+  display:inline-flex;align-self:flex-start;padding:6px 9px;border-radius:999px;
+  border:1px solid #3a414a;background:#15191d;color:var(--accent2);
+  font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px
+}
+.academic-card h3{font-size:19px;line-height:1.3;margin:0 0 10px}
+.academic-card p{margin:0;color:#aeb4bc;font-size:14px;flex:1}
+.academic-link{display:inline-flex;gap:7px;align-items:center;margin-top:18px;color:var(--accent2);font-size:13px;font-weight:800}
+html[data-theme="light"] .academic-card{background:rgba(255,255,255,.74);border-color:#dcd8d0}
+html[data-theme="light"] .academic-card p{color:#606872}
+html[data-theme="light"] .academic-badge{background:#fff;border-color:#d6d1c9;color:#b8322c}
+html[data-theme="light"] .nav-toggle{background:#fff;color:#17191d;border-color:#d3cfc7}
+
+/* Large laptop / small desktop */
+@media(max-width:1180px){
+  .container{width:min(var(--max),calc(100% - 48px))}
+  .nav-links{gap:16px}
+  .hero-grid{gap:38px}
+  h1{font-size:clamp(48px,6.5vw,76px)}
+  section{padding:88px 0}
+  .contact{padding:44px}
+}
+
+/* Tablet landscape and below: switch to compact mobile navigation */
+@media(max-width:1080px){
+  .container{width:min(var(--max),calc(100% - 36px))}
+  .nav-wrap{min-height:68px}
+  .nav-toggle{display:flex;margin-left:auto}
+  .nav-links{
+    display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;
+    padding:14px;background:rgba(20,23,27,.98);border:1px solid #30363e;border-radius:18px;
+    box-shadow:0 22px 50px rgba(0,0,0,.28);backdrop-filter:blur(18px);
+    flex-direction:column;align-items:stretch;gap:4px;z-index:80
+  }
+  .nav-links.open{display:flex}
+  .nav-links>a:not(.nav-cta){display:block}
+  .nav-links>a{padding:11px 12px;border-radius:11px}
+  .nav-links>a:hover{background:rgba(255,255,255,.05)}
+  .nav-cta{text-align:center;margin-top:4px}
+  .lang-switch{margin-top:8px;justify-content:center}
+  .theme-toggle{width:100%;height:42px;border-radius:11px;margin-top:4px}
+  body.menu-open{overflow:hidden}
+  html[data-theme="light"] .nav-links{background:rgba(255,255,255,.98);border-color:#d8d4cc}
+  html[data-theme="light"] .nav-links>a:hover{background:#f1eee8}
+
+  .hero{min-height:auto;padding:64px 0 74px}
+  .hero-grid{grid-template-columns:1fr;gap:38px}
+  .portrait-wrap{justify-self:start}
+  .about-grid,.contact{grid-template-columns:1fr}
+  .skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .academic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .contact-list{justify-self:start}
+}
+
+/* Tablet portrait */
+@media(max-width:768px){
+  section{padding:76px 0}
+  h1{font-size:clamp(44px,10vw,64px);line-height:1}
+  h2{font-size:clamp(32px,7vw,46px)}
+  .hero-copy{font-size:17px}
+  .metrics{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  .metric{padding:20px}
+  .projects{grid-template-columns:1fr}
+  .education{grid-template-columns:1fr}
+  .contact{padding:36px;border-radius:28px}
+  .job-head{gap:16px}
+}
+
+/* Phones */
+@media(max-width:620px){
+  .container{width:min(var(--max),calc(100% - 28px))}
+  nav{backdrop-filter:blur(12px)}
+  .brand{font-size:14px;gap:9px}
+  .brand-mark{width:28px;height:28px}
+  .nav-toggle{width:40px;height:40px}
+  .nav-links{left:-2px;right:-2px}
+  section{padding:64px 0}
+  .hero{padding:44px 0 64px}
+  .eyebrow{font-size:10px;letter-spacing:.12em;margin-bottom:16px;line-height:1.5}
+  h1{font-size:clamp(38px,11.7vw,52px);letter-spacing:-.045em;margin-bottom:22px}
+  .hero-copy{font-size:16px;line-height:1.7;margin-bottom:24px}
+  .hero-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .hero-actions .btn:first-child{grid-column:1/-1}
+  .btn{width:100%;padding:12px 14px}
+  .portrait-wrap,.portrait-card{width:168px!important;max-width:168px!important;height:168px!important}
+  .mini-card{left:6px;bottom:-12px;min-width:142px;padding:10px 12px}
+  .mini-card strong{font-size:17px}
+  .mini-card span{font-size:11px}
+  .section-intro{margin-bottom:28px}
+  .about-card,.skill-card,.experience-card,.edu-card,.project-card,.academic-card{padding:20px}
+  .metrics{grid-template-columns:1fr}
+  .metric{padding:18px}
+  .metric strong{font-size:25px}
+  .skills-grid,.academic-grid{grid-template-columns:1fr}
+  .project-card{align-items:flex-start}
+  .project-arrow{flex:0 0 auto}
+  .job-head{display:block}
+  .job-head h3{font-size:20px;line-height:1.35}
+  .job-date{display:block;margin-top:6px;white-space:normal}
+  .experience-card ul{padding-left:18px}
+  .contact{padding:28px 20px;border-radius:24px}
+  .contact-list{width:100%}
+  .contact-item{min-width:0;width:100%;padding:12px 13px}
+  footer{padding:30px 0 38px}
+  .footer-row{flex-direction:column;gap:6px}
+}
+
+/* Small phones */
+@media(max-width:430px){
+  .container{width:calc(100% - 24px)}
+  .brand{max-width:calc(100% - 56px);overflow:hidden;text-overflow:ellipsis}
+  section{padding:56px 0}
+  .hero{padding-top:36px}
+  h1{font-size:clamp(35px,11vw,46px)}
+  h2{font-size:31px}
+  .hero-actions{grid-template-columns:1fr}
+  .hero-actions .btn:first-child{grid-column:auto}
+  .portrait-wrap,.portrait-card{width:154px!important;max-width:154px!important;height:154px!important}
+  .mini-card{position:relative;left:auto;bottom:auto;margin-top:10px;width:max-content;max-width:100%}
+  .project-card{padding:18px;gap:12px}
+  .academic-card{padding:18px}
+  .tag{font-size:11px;padding:6px 8px}
+}
+
+/* Very small devices, including 320–360px widths */
+@media(max-width:360px){
+  .container{width:calc(100% - 20px)}
+  .brand{font-size:13px}
+  .brand-mark{width:26px;height:26px}
+  .nav-toggle{width:38px;height:38px}
+  h1{font-size:34px}
+  h2{font-size:29px}
+  .hero-copy{font-size:15px}
+  .about-card,.skill-card,.experience-card,.edu-card,.project-card,.academic-card{padding:17px}
+  .contact{padding:24px 16px}
+}
+
 </style>
 </head>
 <body>
 <nav><div class="container nav-wrap">
 <a class="brand" href="#top"><span class="brand-mark photo"><img src="../assets/profile.jpg" alt="Alif Altobelli"></span> Alif Altobelli</a>
-<div class="nav-links">
+<button id="nav-toggle" class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span></span></button>
+<div class="nav-links" id="site-navigation">
 <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#portfolio">Portfolio</a>
-<a href="#contact" class="nav-cta">Contact</a>
+<a href="#academic">Academic</a><a href="#contact" class="nav-cta">Contact</a>
 <div class="lang-switch"><a class="" href="/id/" hreflang="id">ID</a><a class="active" href="/en/" hreflang="en">EN</a></div><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme" title="Theme"><span class="sun">☀</span><span class="moon">☾</span></button>
 </div></div></nav>
 <main id="top">
@@ -249,6 +432,35 @@ html[data-theme="light"] footer{color:#737b84}
 <a class="project-card" href="https://mybess.co.id/" target="_blank" rel="noreferrer"><div><strong>mybess.co.id</strong><span>Website project</span></div><div class="project-arrow">↗</div></a>
 <a class="project-card" href="https://woodunited.com/" target="_blank" rel="noreferrer"><div><strong>woodunited.com</strong><span>Website project</span></div><div class="project-arrow">↗</div></a>
 <a class="project-card" href="https://meal-plan.id/" target="_blank" rel="noreferrer"><div><strong>meal-plan.id</strong><span>Website project</span></div><div class="project-arrow">↗</div></a></div></div></section>
+
+
+<section id="academic">
+  <div class="container">
+    <div class="section-kicker">Academic Portfolio</div>
+    <h2>Projects and published work from university.</h2>
+    <p class="section-intro">Selected academic work from my Informatics Engineering studies at Institut Teknologi Adhi Tama Surabaya (ITATS), covering web systems, software development methodology, and documented academic contributions.</p>
+    <div class="academic-grid">
+      <article class="academic-card">
+        <span class="academic-badge">Research Publication</span>
+        <h3>Web-based project management systems</h3>
+        <p>Co-authored academic work related to web-based project management, including software development using the V-Model and cluster-analysis approaches, published through ITATS academic journals.</p>
+        <a class="academic-link" href="https://ejurnal.itats.ac.id/kernel/issue/download/335/123" target="_blank" rel="noreferrer">View publication ↗</a>
+      </article>
+      <article class="academic-card">
+        <span class="academic-badge">Web System Project</span>
+        <h3>Sistem Pendaftaran Event Running Spazio Playon</h3>
+        <p>Developed a website-based event registration system to support participant registration and event administration as part of university project work.</p>
+        <a class="academic-link" href="https://www.scribd.com/document/761930757/6161-22556-2-SM" target="_blank" rel="noreferrer">View project reference ↗</a>
+      </article>
+      <article class="academic-card">
+        <span class="academic-badge">Academic IPR</span>
+        <h3>Design documentation contribution</h3>
+        <p>Listed as an inventor/contributor on academic design documentation recorded through Indonesia's higher-education research and intellectual-property system.</p>
+        <a class="academic-link" href="https://sinta.kemdiktisaintek.go.id/authors/profile/6108838/?view=iprs" target="_blank" rel="noreferrer">View SINTA record ↗</a>
+      </article>
+    </div>
+  </div>
+</section>
 
 <section id="education"><div class="container"><div class="section-kicker">Education</div><h2>Education</h2><div class="education"><div class="edu-card"><h3>Institut Teknologi Adhi Tama Surabaya</h3><p>Bachelor's Degree – Informatics Engineering · 2021–2025</p></div><div class="edu-card"><h3>SMK Negeri 2 Surabaya</h3><p>Software Engineering · 2017–2020</p></div></div></div></section>
 
@@ -284,4 +496,35 @@ html[data-theme="light"] footer{color:#737b84}
 })();
 </script>
 
+<script>
+
+(function () {
+  const toggle = document.getElementById('nav-toggle');
+  const menu = document.querySelector('.nav-links');
+  if (!toggle || !menu) return;
+
+  function setMenu(open) {
+    menu.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.classList.toggle('menu-open', open && window.innerWidth <= 1080);
+  }
+
+  toggle.addEventListener('click', function () {
+    setMenu(!menu.classList.contains('open'));
+  });
+
+  menu.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () { setMenu(false); });
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') setMenu(false);
+  });
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 1080) setMenu(false);
+  });
+})();
+
+</script>
 </body></html>

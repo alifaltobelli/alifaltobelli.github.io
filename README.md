@@ -36,3 +36,10 @@ Hero portrait updated: smaller size with a circular presentation.
 Portrait image CSS updated with `height: 100%` for consistent circular sizing.
 
 Photo path fix: nested `/id/` and `/en/` pages now correctly use `../assets/profile.jpg`. Hero portrait is fixed at 220x220px desktop and remains circular/responsive.
+
+
+## 2026-10 responsive + academic update
+- Added complete responsive layout refinements for desktop, laptop, tablet, mobile, and 320px+ screens.
+- Added accessible hamburger navigation below 940px.
+- Added Academic Portfolio / Portfolio Akademik section with research, web-system project, and SINTA IPR references.
+- Added `alumniOf` ITATS structured data.
