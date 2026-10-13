@@ -48,3 +48,7 @@ Photo path fix: nested `/id/` and `/en/` pages now correctly use `../assets/prof
 - On screens up to 620px, the profile portrait now appears at the top of the hero.
 - Portrait, experience badge, eyebrow, headline, copy, and CTA area are centered for a cleaner mobile composition.
 - Desktop and tablet layouts remain unchanged.
+
+## Mobile header theme toggle
+- On mobile/tablet navigation, the light/dark theme control is now placed directly beside the hamburger menu.
+- The theme control is no longer shown inside the dropdown menu.
