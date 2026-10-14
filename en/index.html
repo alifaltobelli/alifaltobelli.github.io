@@ -989,6 +989,40 @@ html[data-theme="light"] .contact::before{
   .acrylic-sculpture,.orb-a,.orb-b,.ring-a,.ring-b{animation:none!important}
 }
 
+
+/* Contact section dark-mode text fix */
+.contact,
+.contact *{
+  color: inherit;
+}
+body:not([data-theme="light"]) .contact h2,
+html:not([data-theme="light"]) .contact h2,
+:root .contact h2{
+  color: var(--text) !important;
+}
+body:not([data-theme="light"]) .contact p,
+html:not([data-theme="light"]) .contact p,
+body:not([data-theme="light"]) .contact .contact-intro,
+html:not([data-theme="light"]) .contact .contact-intro,
+body:not([data-theme="light"]) .contact .section-intro,
+html:not([data-theme="light"]) .contact .section-intro{
+  color: var(--muted) !important;
+}
+body:not([data-theme="light"]) .contact .contact-item,
+html:not([data-theme="light"]) .contact .contact-item,
+body:not([data-theme="light"]) .contact .contact-item a,
+html:not([data-theme="light"]) .contact .contact-item a,
+body:not([data-theme="light"]) .contact .contact-card,
+html:not([data-theme="light"]) .contact .contact-card{
+  color: var(--text) !important;
+}
+body:not([data-theme="light"]) .contact .contact-item span,
+html:not([data-theme="light"]) .contact .contact-item span,
+body:not([data-theme="light"]) .contact .contact-item strong,
+html:not([data-theme="light"]) .contact .contact-item strong{
+  color: var(--text) !important;
+}
+
 </style>
 </head>
 <body>

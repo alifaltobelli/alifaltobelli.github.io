@@ -70,3 +70,6 @@ Photo path fix: nested `/id/` and `/en/` pages now correctly use `../assets/prof
 - Added a much richer acrylic / glassmorphism 3D sculpture beside the portrait in the hero.
 - Added layered translucent panels, rotating rings, floating light orbs, pointer-reactive motion, and deeper frosted-glass panels across the site.
 - Mobile remains optimized, with lighter acrylic visuals and reduced complexity.
+
+## Contact section fix
+- Fixed dark mode text colors in the contact section so headings and contact information no longer appear black.
