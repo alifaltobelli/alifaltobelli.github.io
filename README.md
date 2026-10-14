@@ -65,3 +65,8 @@ Photo path fix: nested `/id/` and `/en/` pages now correctly use `../assets/prof
 - Added a restrained headline shimmer and button light sweep.
 - Heavy motion is disabled on small mobile screens and all motion respects `prefers-reduced-motion`.
 - No framework or external 3D library is required; the effect is lightweight vanilla CSS/JavaScript.
+
+## Acrylic 3D hero upgrade
+- Added a much richer acrylic / glassmorphism 3D sculpture beside the portrait in the hero.
+- Added layered translucent panels, rotating rings, floating light orbs, pointer-reactive motion, and deeper frosted-glass panels across the site.
+- Mobile remains optimized, with lighter acrylic visuals and reduced complexity.

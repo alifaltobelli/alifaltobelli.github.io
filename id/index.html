@@ -745,6 +745,250 @@ html[data-theme="light"] .tilt-card:hover{border-color:#c9c3ba}
   #hero-particles{display:none}
 }
 
+
+/* =========================================================
+   EXTRAORDINARY ACRYLIC 3D LAYER
+   ========================================================= */
+.portrait-wrap{position:relative;isolation:isolate}
+.acrylic-stage{
+  position:absolute;
+  right:-34px;
+  top:-36px;
+  width:360px;
+  height:360px;
+  pointer-events:none;
+  z-index:0;
+  transform-style:preserve-3d;
+  filter:drop-shadow(0 30px 60px rgba(0,0,0,.28));
+}
+.acrylic-sculpture{
+  position:absolute;
+  inset:0;
+  transform-style:preserve-3d;
+  animation:acrylicFloat 9s ease-in-out infinite;
+  transform:
+    rotateX(calc(var(--acrylic-ry, 0) * -1))
+    rotateY(var(--acrylic-rx, 0))
+    rotateZ(-10deg);
+}
+.acrylic-plane,
+.acrylic-strip,
+.acrylic-ring,
+.acrylic-core,
+.acrylic-shine{
+  position:absolute;
+  display:block;
+  transform-style:preserve-3d;
+}
+.acrylic-plane{
+  inset:50px;
+  border-radius:34px;
+  border:1px solid rgba(255,255,255,.24);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.32), rgba(255,255,255,.08) 38%, rgba(217,75,68,.10) 100%);
+  backdrop-filter: blur(18px) saturate(165%);
+  -webkit-backdrop-filter: blur(18px) saturate(165%);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.32),
+    inset 0 -1px 0 rgba(255,255,255,.08),
+    0 18px 34px rgba(0,0,0,.12);
+}
+.plane-back{
+  transform:translate3d(-18px, 6px, -52px) rotate(-14deg);
+  opacity:.36;
+}
+.plane-mid{
+  inset:42px;
+  transform:translate3d(4px, -6px, -8px) rotate(11deg);
+  opacity:.66;
+}
+.plane-front{
+  inset:58px;
+  transform:translate3d(24px, 14px, 48px) rotate(-8deg);
+  opacity:.92;
+}
+.acrylic-strip{
+  width:120px;
+  height:14px;
+  border-radius:999px;
+  left:50%;
+  top:50%;
+  margin-left:-60px;
+  margin-top:-7px;
+  background:linear-gradient(90deg, rgba(255,255,255,.55), rgba(255,122,112,.84), rgba(217,75,68,.18));
+  box-shadow:0 0 16px rgba(255,122,112,.28);
+}
+.strip-a{transform:translate3d(-20px,-10px,74px) rotate(28deg)}
+.strip-b{transform:translate3d(24px,18px,82px) rotate(-38deg)}
+.acrylic-ring{
+  border-radius:50%;
+  border:1.3px solid rgba(255,255,255,.42);
+  left:50%;
+  top:50%;
+}
+.ring-a{
+  width:236px;height:236px;margin:-118px 0 0 -118px;
+  transform:translate3d(0,0,34px) rotateX(64deg) rotateY(16deg);
+  border-color:rgba(255,255,255,.28);
+  animation:acrylicSpinA 12s linear infinite;
+}
+.ring-b{
+  width:174px;height:174px;margin:-87px 0 0 -87px;
+  transform:translate3d(0,0,92px) rotateX(74deg) rotateZ(24deg);
+  border-color:rgba(255,122,112,.48);
+  box-shadow:0 0 18px rgba(255,122,112,.18);
+  animation:acrylicSpinB 9s linear infinite reverse;
+}
+.acrylic-core{
+  left:50%;top:50%;
+  width:92px;height:92px;margin:-46px 0 0 -46px;
+  border-radius:26px;
+  border:1px solid rgba(255,255,255,.28);
+  background:
+    radial-gradient(circle at 35% 30%, rgba(255,255,255,.78), rgba(255,255,255,.18) 38%, rgba(255,122,112,.12) 74%, rgba(255,122,112,.02) 100%);
+  transform:translate3d(0,0,118px) rotate(16deg);
+  backdrop-filter:blur(16px) saturate(170%);
+  -webkit-backdrop-filter:blur(16px) saturate(170%);
+  box-shadow:
+    0 12px 34px rgba(255,122,112,.18),
+    inset 0 1px 0 rgba(255,255,255,.52);
+}
+.acrylic-shine{
+  inset:36px;
+  border-radius:42px;
+  background:linear-gradient(116deg, rgba(255,255,255,.38), rgba(255,255,255,0) 30%, rgba(255,255,255,.12) 55%, rgba(255,255,255,0) 70%);
+  transform:translate3d(0,0,134px) rotate(-12deg);
+  mix-blend-mode:screen;
+  opacity:.82;
+}
+.acrylic-orb{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(0px);
+  opacity:.8;
+}
+.orb-a{
+  width:84px;height:84px;
+  right:26px;top:34px;
+  background:radial-gradient(circle at 30% 30%, rgba(255,255,255,.78), rgba(255,255,255,.12) 35%, rgba(255,122,112,.18) 70%, transparent 100%);
+  box-shadow:0 0 40px rgba(255,122,112,.16);
+  animation:orbFloatA 8s ease-in-out infinite;
+}
+.orb-b{
+  width:58px;height:58px;
+  left:44px;bottom:38px;
+  background:radial-gradient(circle at 35% 30%, rgba(255,255,255,.76), rgba(255,255,255,.12) 34%, rgba(217,75,68,.22) 74%, transparent 100%);
+  box-shadow:0 0 30px rgba(217,75,68,.18);
+  animation:orbFloatB 10s ease-in-out infinite;
+}
+
+.portrait-card,
+.mini-card{
+  position:relative;
+  z-index:2;
+}
+
+.about-card,.metric,.skill-card,.experience-card,.project-card,.academic-card,.edu-card,.contact{
+  position:relative;
+  overflow:hidden;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)),
+    linear-gradient(135deg, rgba(255,255,255,.04), rgba(255,255,255,0) 45%);
+  backdrop-filter: blur(14px) saturate(155%);
+  -webkit-backdrop-filter: blur(14px) saturate(155%);
+  border:1px solid rgba(255,255,255,.09);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.08),
+    0 18px 44px rgba(0,0,0,.14);
+}
+.about-card::before,.metric::before,.skill-card::before,.experience-card::before,.project-card::before,.academic-card::before,.edu-card::before,.contact::before{
+  content:"";
+  position:absolute;
+  inset:-1px;
+  background:
+    radial-gradient(260px 70px at top left, rgba(255,255,255,.12), transparent 55%),
+    linear-gradient(130deg, rgba(255,255,255,.08), transparent 34%, transparent 66%, rgba(255,255,255,.05));
+  pointer-events:none;
+  opacity:.8;
+}
+.project-card,.academic-card,.experience-card{transform-style:preserve-3d}
+.project-card > *, .academic-card > *, .experience-card > *{position:relative;z-index:1}
+
+html[data-theme="light"] .about-card,
+html[data-theme="light"] .metric,
+html[data-theme="light"] .skill-card,
+html[data-theme="light"] .experience-card,
+html[data-theme="light"] .project-card,
+html[data-theme="light"] .academic-card,
+html[data-theme="light"] .edu-card,
+html[data-theme="light"] .contact{
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.80), rgba(255,255,255,.58)),
+    linear-gradient(135deg, rgba(255,255,255,.34), rgba(255,255,255,0) 45%);
+  border-color:rgba(201,195,186,.72);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.55),
+    0 18px 40px rgba(110,90,70,.08);
+}
+html[data-theme="light"] .about-card::before,
+html[data-theme="light"] .metric::before,
+html[data-theme="light"] .skill-card::before,
+html[data-theme="light"] .experience-card::before,
+html[data-theme="light"] .project-card::before,
+html[data-theme="light"] .academic-card::before,
+html[data-theme="light"] .edu-card::before,
+html[data-theme="light"] .contact::before{
+  opacity:.52;
+}
+
+@keyframes acrylicFloat{
+  0%,100%{transform:rotateX(calc(var(--acrylic-ry, 0) * -1)) rotateY(var(--acrylic-rx, 0)) rotateZ(-10deg) translateY(0)}
+  50%{transform:rotateX(calc(var(--acrylic-ry, 0) * -1)) rotateY(var(--acrylic-rx, 0)) rotateZ(-7deg) translateY(-8px)}
+}
+@keyframes acrylicSpinA{
+  from{transform:translate3d(0,0,34px) rotateX(64deg) rotateY(16deg) rotateZ(0deg)}
+  to{transform:translate3d(0,0,34px) rotateX(64deg) rotateY(16deg) rotateZ(360deg)}
+}
+@keyframes acrylicSpinB{
+  from{transform:translate3d(0,0,92px) rotateX(74deg) rotateZ(0deg)}
+  to{transform:translate3d(0,0,92px) rotateX(74deg) rotateZ(360deg)}
+}
+@keyframes orbFloatA{
+  0%,100%{transform:translate3d(0,0,0)}
+  50%{transform:translate3d(-10px,14px,0)}
+}
+@keyframes orbFloatB{
+  0%,100%{transform:translate3d(0,0,0)}
+  50%{transform:translate3d(12px,-14px,0)}
+}
+
+@media(max-width:1080px){
+  .acrylic-stage{
+    width:300px;height:300px;
+    right:-20px;top:-16px;
+    opacity:.96;
+  }
+}
+@media(max-width:620px){
+  .acrylic-stage{
+    position:absolute;
+    width:220px;height:220px;
+    inset:auto auto 8px 50%;
+    transform:translateX(-50%);
+    right:auto;top:auto;
+    opacity:.88;
+  }
+  .acrylic-plane{inset:30px;border-radius:24px}
+  .plane-mid{inset:26px}
+  .plane-front{inset:38px}
+  .ring-a{width:150px;height:150px;margin:-75px 0 0 -75px}
+  .ring-b{width:110px;height:110px;margin:-55px 0 0 -55px}
+  .acrylic-core{width:64px;height:64px;margin:-32px 0 0 -32px}
+}
+@media(prefers-reduced-motion:reduce){
+  .acrylic-sculpture,.orb-a,.orb-b,.ring-a,.ring-b{animation:none!important}
+}
+
 </style>
 </head>
 <body>
@@ -763,7 +1007,23 @@ html[data-theme="light"] .tilt-card:hover{border-color:#c9c3ba}
 <section class="hero"><div class="container hero-grid"><div>
 <div class="eyebrow">WordPress Developer · Surabaya, Indonesia</div><h1>Membangun website yang <span>cepat, aman,</span> dan mudah dirawat.</h1><p class="hero-copy">Web Developer dengan pengalaman lebih dari 5 tahun di pengembangan WordPress, manajemen server cPanel/WHM, web hosting, custom theme & plugin, performance optimization, technical SEO, dan website security.</p>
 <div class="hero-actions"><a class="btn btn-primary" href="#portfolio">Lihat Portfolio</a><a class="btn btn-secondary" href="../assets/CV-Alif-Altobelli-ID.pdf" target="_blank">Download CV</a><a class="btn btn-secondary" href="https://github.com/alifaltobelli" target="_blank" rel="noreferrer">GitHub</a></div>
-</div><div class="portrait-wrap"><div class="portrait-card"><img src="../assets/profile.jpg" width="900" height="1347" alt="Alif Altobelli, WordPress Developer and Web Developer" fetchpriority="high"></div><div class="mini-card"><strong>5+ years</strong><span>WordPress & web infrastructure</span></div></div>
+</div><div class="portrait-wrap">
+<div class="acrylic-stage" aria-hidden="true">
+  <div class="acrylic-orb orb-a"></div>
+  <div class="acrylic-orb orb-b"></div>
+  <div class="acrylic-sculpture">
+    <span class="acrylic-plane plane-back"></span>
+    <span class="acrylic-plane plane-mid"></span>
+    <span class="acrylic-plane plane-front"></span>
+    <span class="acrylic-strip strip-a"></span>
+    <span class="acrylic-strip strip-b"></span>
+    <span class="acrylic-ring ring-a"></span>
+    <span class="acrylic-ring ring-b"></span>
+    <span class="acrylic-core"></span>
+    <span class="acrylic-shine"></span>
+  </div>
+</div>
+<div class="portrait-card"><img src="../assets/profile.jpg" width="900" height="1347" alt="Alif Altobelli, WordPress Developer and Web Developer" fetchpriority="high"></div><div class="mini-card"><strong>5+ years</strong><span>WordPress & web infrastructure</span></div></div>
 </div></section>
 
 <section id="about"><div class="container"><div class="section-kicker">Tentang</div><h2>Developer yang nyaman bekerja dari interface sampai server.</h2><div class="about-grid"><div class="about-card"><p>Saya berfokus pada pengembangan dan pemeliharaan website WordPress untuk berbagai kebutuhan, termasuk e-commerce, properti, dan company profile. Pengalaman saya mencakup custom theme & plugin, WooCommerce, Elementor, cPanel/WHM, DNS & SSL, migrasi website, technical SEO, performance optimization, dan keamanan website.</p></div><div class="metrics"><div class="metric"><strong>5+</strong><span>Tahun pengalaman</span></div><div class="metric"><strong>3</strong><span>Area utama: Web, Server, SEO</span></div><div class="metric"><strong>8</strong><span>Portfolio aktif</span></div></div></div></div></section>
@@ -1005,6 +1265,39 @@ html[data-theme="light"] .tilt-card:hover{border-color:#c9c3ba}
     if(ro) ro.observe(hero);
     else window.addEventListener('resize',resize,{passive:true});
   }
+})();
+</script>
+
+
+<script>
+(function(){
+  if (window.__alifAcrylicInit) return;
+  window.__alifAcrylicInit = true;
+
+  const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduced) return;
+
+  const hero = document.querySelector('.hero');
+  const sculpture = document.querySelector('.acrylic-stage');
+  if (!hero || !sculpture) return;
+
+  let rx = 0, ry = 0, tx = 0, ty = 0, raf = 0;
+  function frame(){
+    rx += (tx - rx) * 0.08;
+    ry += (ty - ry) * 0.08;
+    sculpture.style.setProperty('--acrylic-rx', (rx * 10).toFixed(2) + 'deg');
+    sculpture.style.setProperty('--acrylic-ry', (ry * 10).toFixed(2) + 'deg');
+    raf = requestAnimationFrame(frame);
+  }
+  function move(e){
+    const r = hero.getBoundingClientRect();
+    const x = ((e.clientX - r.left) / r.width) - 0.5;
+    const y = ((e.clientY - r.top) / r.height) - 0.5;
+    tx = x; ty = y;
+  }
+  hero.addEventListener('pointermove', move);
+  hero.addEventListener('pointerleave', () => { tx = 0; ty = 0; });
+  frame();
 })();
 </script>
 
