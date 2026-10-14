@@ -57,3 +57,11 @@ Photo path fix: nested `/id/` and `/en/` pages now correctly use `../assets/prof
 - Light/dark toggle is visible again on desktop.
 - On tablet/mobile it remains beside the hamburger menu.
 - It is not shown inside the dropdown navigation.
+
+## Motion / 3D enhancement
+- Added subtle animated hero particles and ambient motion.
+- Added desktop-only 3D parallax on the portrait and hover tilt on portfolio/skill/experience cards.
+- Added scroll reveal transitions.
+- Added a restrained headline shimmer and button light sweep.
+- Heavy motion is disabled on small mobile screens and all motion respects `prefers-reduced-motion`.
+- No framework or external 3D library is required; the effect is lightweight vanilla CSS/JavaScript.
