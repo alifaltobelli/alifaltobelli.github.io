@@ -52,3 +52,8 @@ Photo path fix: nested `/id/` and `/en/` pages now correctly use `../assets/prof
 ## Mobile header theme toggle
 - On mobile/tablet navigation, the light/dark theme control is now placed directly beside the hamburger menu.
 - The theme control is no longer shown inside the dropdown menu.
+
+## Theme toggle fix
+- Light/dark toggle is visible again on desktop.
+- On tablet/mobile it remains beside the hamburger menu.
+- It is not shown inside the dropdown navigation.
